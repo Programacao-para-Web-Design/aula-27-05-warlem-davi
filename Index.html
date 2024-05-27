@@ -3,8 +3,9 @@
     <head>
 
         <meta charset="UTF-8">
-        <title>AULA 27-05</title>
-	<link rel="icon" href="./Imagem/14gnqv8rtl9b1.jpg" type="image/png">
+        <title>AULA 13-05</title>
+	    <link rel="icon" href="./Imagem/14gnqv8rtl9b1.jpg" type="image/png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <style>
 
@@ -18,7 +19,7 @@
 	            margin-right: 10px;
                 position: fixed;
                 width: 99%;
-                background-color: rgba(0, 0, 0, 0.623);
+                background-color: rgba(0, 0, 0, 0.807);
             }
             li{
                 display: inline-block;
@@ -45,6 +46,8 @@
                 background-image: url("Imagem/GJwg9H3XUAA19zK.jpg");
                 background-repeat: no-repeat;
                 background-attachment: fixed;
+                background-size: cover;
+                background-position: center;
             }
             h1{
                 font-size: 14pt;
@@ -68,15 +71,35 @@
                 display: block;
                 height: 70%;
                 width: 70%;
-                margin-top: 5%;
+            }
+            #FireFly2{
+                position: absolute;
+                height: 0px;
+                width: 0px;
+            }
+            #imagem{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                flex-direction: column;
+                margin-top: 10%;
             }
 
                                 /* --- BLOCOS --- */
 
             .bloco{
-                width: 50%;
-                background-color: rgba(0, 0, 0, 0.384);
+                width: 70%;
+                background-color: rgba(0, 0, 0, 0.807);
                 margin-top: 50px;
+                scroll-behavior: smooth;
+            }
+            #Blocos{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                flex-direction: column;
                 scroll-behavior: smooth;
             }
             .materia{
@@ -87,7 +110,8 @@
                 scroll-behavior: smooth;
             }
             .text{
-                margin-left: 20px;
+                margin: 20px;
+                justify-content: center;
             }
 
                                 /* --- RODAPÉ --- */
@@ -102,11 +126,65 @@
 
                                 /* --- MEDIA --- */
 
-                @media only screen and (max-width: 600px) {
+            @media screen and (max-width: 728px) {
+
+                                /* --- MEDIA CORPO --- */
                 body{
-                    background-image: url("Imagem/Firefly.\(Honkai.Star.Rail\).600.4117394.jpg");
+                    background-image: url("Imagem/backgroundcell.jpg");
                     background-repeat: no-repeat;
+                    background-size: cover;
                     background-attachment: fixed;
+                }
+                #imagem{
+                    margin-top: 80px;
+                    padding-bottom: 7vh;
+                }
+                #FireFly2{
+                    width: 400px;
+                    height: 900px;
+                    position: static;
+                }
+                #FireFly{
+                    width: 0px;
+                    height: 0px;
+                    position: absolute;
+                }
+                main{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    flex-direction: row;
+                    scroll-behavior: smooth;
+                }
+                h1{
+                    font-size: 12pt;
+                }
+
+                                /* --- MEDIA BLOCOS --- */
+
+                #Blocos{
+                    margin-left: 10px;
+                    width: 70%;
+                    justify-content: center;
+                    align-items: center;
+                    height: 50vh;
+                }
+                .bloco{
+                    width: 100%;
+                }
+                .text{
+                    margin: 20px;
+                    justify-content: center;
+                }
+                .materia{
+                    margin: 10px;
+                }
+                #bloco2{
+                    margin-top: 70px;
+                }
+                #bloco3{
+                    margin-top: 70px;
                 }
             }
         </style>
@@ -121,33 +199,44 @@
                 <h1 id="tituloHeader">TecnoLab</h1>
             </article>
 
-            <ul>
-                <a href="#bloco1"><li>PWD</li></a>
-                <a href="#bloco2"><li>DG</li></a>
-                <a href="#bloco3"><li>APS</li></a>
-            </ul>
+            <nav>
+                <ul>
+                    <a href="#bloco1"><li>PWD</li></a>
+                    <a href="#bloco2"><li>DG</li></a>
+                    <a href="#bloco3"><li>APS</li></a>
+                </ul>
+            </nav>
 
         </header>
                                         <!-- CORPO -->
         <main>
 
+            <article id="imagem">
+            <img src="./Imagem/backgroundphone.webp" id="FireFly2" alt="MyLove2">
             <img src="./Imagem/Character_Firefly_Introduction.webp" id="FireFly" alt="MyLove">
+            </article>
 
                                         <!-- BLOCO 1 -->
-
+            <section id="Blocos">
             <section class="bloco" id="bloco1">
 
                 <h1 class="materia">PROGRAMAÇÃO WEB DESIGN</h1>
 
                 <h1 class="text">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it to make a type 
-                    specimen book. It has survived not only five centuries, but also the leap into
-                    electronic typesetting, remaining essentially unchanged. It was popularised in 
-                    the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-                    and more recently with desktop publishing software like Aldus PageMaker including 
-                    versions of Lorem Ipsum.
+                    Birds are born with no shackles
+                    Then what fetters my fate?
+                    Blown away, the white petals
+                    Leave me trapped in the cage
+
+                    The endless isolation
+                    Can wear down my illusion
+                    Someday, I'll make a dream unchained
+
+                    Let my heart bravely spread the wings
+                    Soaring past the night, to trace the bright moonlight
+                    Let the clouds heal me of the stains
+                    Gently wipe the sorrow of my life
+                    I dream
                 </h1>
             </section>
 
@@ -158,14 +247,20 @@
                 <h1 class="materia">DESENVOLVIMENTO DE GAMES</h1>
 
                 <h1 class="text">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it to make a type 
-                    specimen book. It has survived not only five centuries, but also the leap into
-                    electronic typesetting, remaining essentially unchanged. It was popularised in 
-                    the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-                    and more recently with desktop publishing software like Aldus PageMaker including 
-                    versions of Lorem Ipsum.
+                    What is meant by miraclе?
+                    A word outside my days
+                    Once again, repеatable
+                    But how could I escape?
+
+                    No further hesitation
+                    On those unanswered questions
+                    So now, I’ll make a dream unchained
+
+                    Let my heart bravely spread the wings
+                    Soaring past the night, to trace the bright moonlight
+                    Let the clouds heal me of the stains
+                    Gently wipe the sorrow of my life
+                    I dream
                 </h1>
             </section>
 
@@ -176,17 +271,14 @@
                 <h1 class="materia">ANÁLISE E PROJETO DE SISTEMA</h1>
 
                 <h1 class="text">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it to make a type 
-                    specimen book. It has survived not only five centuries, but also the leap into
-                    electronic typesetting, remaining essentially unchanged. It was popularised in 
-                    the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-                    and more recently with desktop publishing software like Aldus PageMaker including 
-                    versions of Lorem Ipsum.
+                    Let my heart bravely spread the wings
+                    Soaring past the night, to trace the bright moonlight
+                    Let the clouds heal me of the stains
+                    Gently wipe the sorrow of my life
+                    I dream
                 </h1>
             </section>
-
+        </section>
         </main>
                                         <!-- RODAPÉ -->
         <footer>
