@@ -4,7 +4,7 @@
 
         <meta charset="UTF-8">
         <title>AULA 13-05</title>
-	<link rel="icon" href="./Imagem/14gnqv8rtl9b1.jpg" type="image/png">
+	    <link rel="icon" href="./Imagem/14gnqv8rtl9b1.jpg" type="image/png">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <style>
@@ -16,9 +16,10 @@
 	            flex-direction: row;
 	            justify-content: space-between;
 	            align-items: center;
-	            margin-right: 10px;
                 position: fixed;
                 width: 99%;
+                margin-top: -8px;
+                margin-left: -3px;
                 background-color: rgba(0, 0, 0, 0.807);
             }
             li{
@@ -112,6 +113,7 @@
             .text{
                 margin: 20px;
                 justify-content: center;
+                color: white;
             }
 
                                 /* --- RODAPÉ --- */
@@ -126,7 +128,13 @@
 
                                 /* --- MEDIA --- */
 
-            @media screen and (max-width: 728px) {
+            @media screen and (max-width: 500px) {
+
+                                /* --- MEDIA CABEÇALHO --- */
+
+                header{
+                    width: 100%;
+                }
 
                                 /* --- MEDIA CORPO --- */
                 body{
@@ -138,10 +146,12 @@
                 #imagem{
                     margin-top: 80px;
                     padding-bottom: 7vh;
+                    margin-left: -20px;
+                    margin-right: 10px;
                 }
                 #FireFly2{
-                    width: 400px;
-                    height: 900px;
+                    width: 250px;
+                    height: 650px;
                     position: static;
                 }
                 #FireFly{
@@ -164,7 +174,6 @@
                                 /* --- MEDIA BLOCOS --- */
 
                 #Blocos{
-                    margin-left: 10px;
                     width: 70%;
                     justify-content: center;
                     align-items: center;
@@ -172,19 +181,23 @@
                 }
                 .bloco{
                     width: 100%;
+                    
                 }
                 .text{
                     margin: 20px;
                     justify-content: center;
+                    font-size: 9pt;
+                    color: white;
                 }
                 .materia{
-                    margin: 10px;
+                    margin: 8px;
+                    font-size: 10pt;
                 }
                 #bloco2{
-                    margin-top: 70px;
+                    margin-top: 10px;
                 }
                 #bloco3{
-                    margin-top: 70px;
+                    margin-top: 10px;
                 }
             }
         </style>
@@ -222,22 +235,12 @@
 
                 <h1 class="materia">PROGRAMAÇÃO WEB DESIGN</h1>
 
-                <h1 class="text">
+                <p class="text">
                     Birds are born with no shackles
                     Then what fetters my fate?
                     Blown away, the white petals
                     Leave me trapped in the cage
-
-                    The endless isolation
-                    Can wear down my illusion
-                    Someday, I'll make a dream unchained
-
-                    Let my heart bravely spread the wings
-                    Soaring past the night, to trace the bright moonlight
-                    Let the clouds heal me of the stains
-                    Gently wipe the sorrow of my life
-                    I dream
-                </h1>
+                </p>
             </section>
 
                                         <!-- BLOCO 2 -->
@@ -246,22 +249,13 @@
 
                 <h1 class="materia">DESENVOLVIMENTO DE GAMES</h1>
 
-                <h1 class="text">
-                    What is meant by miraclе?
-                    A word outside my days
-                    Once again, repеatable
-                    But how could I escape?
-
-                    No further hesitation
-                    On those unanswered questions
-                    So now, I’ll make a dream unchained
-
+                <p class="text">
                     Let my heart bravely spread the wings
                     Soaring past the night, to trace the bright moonlight
                     Let the clouds heal me of the stains
                     Gently wipe the sorrow of my life
                     I dream
-                </h1>
+                </p>
             </section>
 
                                         <!-- BLOCO 3 -->
@@ -270,13 +264,11 @@
 
                 <h1 class="materia">ANÁLISE E PROJETO DE SISTEMA</h1>
 
-                <h1 class="text">
-                    Let my heart bravely spread the wings
-                    Soaring past the night, to trace the bright moonlight
-                    Let the clouds heal me of the stains
-                    Gently wipe the sorrow of my life
-                    I dream
-                </h1>
+                <p class="text">
+                    No further hesitation
+                    On those unanswered questions
+                    So now, I’ll make a dream unchained
+                </p>
             </section>
         </section>
         </main>
