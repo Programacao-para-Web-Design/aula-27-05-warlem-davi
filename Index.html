@@ -1,284 +1,291 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
-    <head>
+	<head>
 
-        <meta charset="UTF-8">
-        <title>AULA 13-05</title>
-	    <link rel="icon" href="./Imagem/14gnqv8rtl9b1.jpg" type="image/png">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        	<meta charset="UTF-8">
+        	<title>AULA 13-05</title>
+	    	<link rel="icon" href="./Imagem/14gnqv8rtl9b1.jpg" type="image/png">
+        	<meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <style>
+        	<style>
 
-                                /* --- CABEÇALHO --- */
-                   
-            header{
-                display: flex;
-	            flex-direction: row;
-	            justify-content: space-between;
-	            align-items: center;
-                position: fixed;
-                width: 99%;
-                margin-top: -8px;
-                margin-left: -3px;
-                background-color: rgba(0, 0, 0, 0.807);
-            }
-            li{
-                display: inline-block;
-                margin-left: 10px;
-                margin-right: 20px;
-            }
-            a{
-                color: white;
-                font-weight: bold;
-            }
-            img{
-                height: 30px;
-                width: 30px;
-                padding-top: 20px;
-                margin-left: 20px;
-            }
-            #tituloHeader{
-                font-size: 30px;
-            }
+	                                /* --- CABEÇALHO --- */
+	                   
+	            header{
+	                display: flex;
+		            flex-direction: row;
+		            justify-content: space-between;
+		            align-items: center;
+	                position: fixed;
+	                width: 99%;
+	                margin-top: -8px;
+	                margin-left: -3px;
+	                background-color: rgba(0, 0, 0, 0.807);
+	            }
+	            li{
+	                display: inline-block;
+	                margin-left: 10px;
+	                margin-right: 20px;
+	            }
+	            a{
+	                color: white;
+	                font-weight: bold;
+	            }
+	            img{
+	                height: 30px;
+	                width: 30px;
+	                padding-top: 20px;
+	                margin-left: 20px;
+	            }
+	            #tituloHeader{
+	                font-size: 30px;
+	            }
+	
+	                                /* --- CORPO --- */
+	
+	            body{
+	                background-image: url("Imagem/GJwg9H3XUAA19zK.jpg");
+	                background-repeat: no-repeat;
+	                background-attachment: fixed;
+	                background-size: cover;
+	                background-position: center;
+	            }
+	            h1{
+	                font-size: 14pt;
+	                display: inline-block;
+	                font-weight: bold;
+	                color: white;
+	            }
+	            p{
+	                font-weight: bold;
+	            }
+	
+	            main{
+	                display: flex;
+	                align-items: center;
+	                justify-content: center;
+	                width: 100%;
+	                flex-direction: column;
+	                scroll-behavior: smooth;
+	            }
+	            #FireFly{
+	                display: block;
+	                height: 70%;
+	                width: 70%;
+	            }
+	            #FireFly2{
+	                position: absolute;
+	                height: 0px;
+	                width: 0px;
+	            }
+	            #imagem{
+	                display: flex;
+	                align-items: center;
+	                justify-content: center;
+	                width: 100%;
+	                flex-direction: column;
+	                margin-top: 10%;
+	            }
+	
+	                                /* --- BLOCOS --- */
+	
+	            .bloco{
+	                width: 70%;
+	                background-color: rgba(0, 0, 0, 0.807);
+	                margin-top: 50px;
+	                scroll-behavior: smooth;
+	            }
+	            #Blocos{
+	                display: flex;
+	                align-items: center;
+	                justify-content: center;
+	                width: 100%;
+	                flex-direction: column;
+	                scroll-behavior: smooth;
+	            }
+	            .materia{
+	                right: 50%;
+	                display: flex;
+	                justify-content: center;
+	                align-items: center;
+	                scroll-behavior: smooth;
+	            }
+	            .text{
+	                margin: 20px;
+	                justify-content: center;
+	                color: white;
+	            }
+	
+	                                /* --- RODAPÉ --- */
+	
+	            footer{
+	                display: flex;
+	                align-items: center;
+	                justify-content: center;
+	                width: 100%;
+	                color: white;
+	            }
+	
+	                                /* --- MEDIA --- */
+	
+	            @media screen and (max-width: 500px) {
+	
+	                                /* --- MEDIA CABEÇALHO --- */
+	
+				header{
+		                    	width: 100%;
+					background-color: rgba(1, 31, 1, 0.623);
+		                }
+		
+		                                /* --- MEDIA CORPO --- */
+			    
+		                body{
+			                background-image: url("Imagem/backgroundcell.jpg");
+			                background-repeat: no-repeat;
+			                background-size: cover;
+			                background-attachment: fixed;
+		                }
+		                #imagem{
+			                margin-top: 80px;
+			                padding-bottom: 7vh;
+			                margin-left: -20px;
+			                margin-right: 10px;
+		                }
+		                #FireFly2{
+			                width: 250px;
+			                height: 650px;
+			                position: static;
+		                }
+		                #FireFly{
+			                width: 0px;
+			                height: 0px;
+			                position: absolute;
+		                }
+		                main{
+			                display: flex;
+			                align-items: center;
+			                justify-content: center;
+			                width: 100%;
+			                flex-direction: row;
+			                scroll-behavior: smooth;
+		                }
+	                	h1{
+	                    		font-size: 12pt;
+	                	}
 
-                                /* --- CORPO --- */
-
-            body{
-                background-image: url("Imagem/GJwg9H3XUAA19zK.jpg");
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                background-size: cover;
-                background-position: center;
-            }
-            h1{
-                font-size: 14pt;
-                display: inline-block;
-                font-weight: bold;
-                color: white;
-            }
-            p{
-                font-weight: bold;
-            }
-
-            main{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 100%;
-                flex-direction: column;
-                scroll-behavior: smooth;
-            }
-            #FireFly{
-                display: block;
-                height: 70%;
-                width: 70%;
-            }
-            #FireFly2{
-                position: absolute;
-                height: 0px;
-                width: 0px;
-            }
-            #imagem{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 100%;
-                flex-direction: column;
-                margin-top: 10%;
-            }
-
-                                /* --- BLOCOS --- */
-
-            .bloco{
-                width: 70%;
-                background-color: rgba(0, 0, 0, 0.807);
-                margin-top: 50px;
-                scroll-behavior: smooth;
-            }
-            #Blocos{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 100%;
-                flex-direction: column;
-                scroll-behavior: smooth;
-            }
-            .materia{
-                right: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                scroll-behavior: smooth;
-            }
-            .text{
-                margin: 20px;
-                justify-content: center;
-                color: white;
-            }
-
-                                /* --- RODAPÉ --- */
-
-            footer{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 100%;
-                color: white;
-            }
-
-                                /* --- MEDIA --- */
-
-            @media screen and (max-width: 500px) {
-
-                                /* --- MEDIA CABEÇALHO --- */
-
-		    header{
-                    	width: 100%;
-			background-color: rgba(1, 31, 1, 0.623);
-                	}
-
-                                /* --- MEDIA CORPO --- */
-                body{
-                    background-image: url("Imagem/backgroundcell.jpg");
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    background-attachment: fixed;
-                }
-                #imagem{
-                    margin-top: 80px;
-                    padding-bottom: 7vh;
-                    margin-left: -20px;
-                    margin-right: 10px;
-                }
-                #FireFly2{
-                    width: 250px;
-                    height: 650px;
-                    position: static;
-                }
-                #FireFly{
-                    width: 0px;
-                    height: 0px;
-                    position: absolute;
-                }
-                main{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 100%;
-                    flex-direction: row;
-                    scroll-behavior: smooth;
-                }
-                h1{
-                    font-size: 12pt;
-                }
-
-                                /* --- MEDIA BLOCOS --- */
-
-                #Blocos{
-                    width: 70%;
-                    justify-content: center;
-                    align-items: center;
-                    height: 50vh;
-                }
-                .bloco{
-                    width: 100%;
-                    background-color: rgba(1, 31, 1, 0.623);
-                }
-                .text{
-                    margin: 20px;
-                    justify-content: center;
-                    font-size: 9pt;
-                    color: white;
-                }
-                .materia{
-                    margin: 8px;
-                    font-size: 10pt;
-                }
-                #bloco2{
-                    margin-top: 10px;
-                }
-                #bloco3{
-                    margin-top: 10px;
-                }
-            }
-        </style>
-    </head>
-
-    <body>
-                                        <!-- CABEÇALHO -->
-        <header>
-
-            <article>
-                <img src="./Imagem/logoescola.jpg" alt="logoescola">
-                <h1 id="tituloHeader">TecnoLab</h1>
-            </article>
-
-            <nav>
-                <ul>
-                    <a href="#bloco1"><li>PWD</li></a>
-                    <a href="#bloco2"><li>DG</li></a>
-                    <a href="#bloco3"><li>APS</li></a>
-                </ul>
-            </nav>
-
-        </header>
-                                        <!-- CORPO -->
-        <main>
-
-            <article id="imagem">
-            <img src="./Imagem/backgroundphone.webp" id="FireFly2" alt="MyLove2">
-            <img src="./Imagem/Character_Firefly_Introduction.webp" id="FireFly" alt="MyLove">
-            </article>
-
-                                        <!-- BLOCO 1 -->
-            <section id="Blocos">
-            <section class="bloco" id="bloco1">
-
-                <h1 class="materia">PROGRAMAÇÃO WEB DESIGN</h1>
-
-                <p class="text">
-                    Birds are born with no shackles
-                    Then what fetters my fate?
-                    Blown away, the white petals
-                    Leave me trapped in the cage
-                </p>
-            </section>
-
-                                        <!-- BLOCO 2 -->
-
-            <section class="bloco" id="bloco2">
-
-                <h1 class="materia">DESENVOLVIMENTO DE GAMES</h1>
-
-                <p class="text">
-                    Let my heart bravely spread the wings
-                    Soaring past the night, to trace the bright moonlight
-                    Let the clouds heal me of the stains
-                    Gently wipe the sorrow of my life
-                    I dream
-                </p>
-            </section>
-
-                                        <!-- BLOCO 3 -->
-
-            <section class="bloco" id="bloco3">
-
-                <h1 class="materia">ANÁLISE E PROJETO DE SISTEMA</h1>
-
-                <p class="text">
-                    No further hesitation
-                    On those unanswered questions
-                    So now, I’ll make a dream unchained
-                </p>
-            </section>
-        </section>
-        </main>
-                                        <!-- RODAPÉ -->
-        <footer>
-
-            <p>
-                Site feito por Davi Medeiros e Warlem
-            </p>
-        </footer>
-    </body>
+	                                /* --- MEDIA BLOCOS --- */
+	
+		                #Blocos{
+			                width: 70%;
+			                justify-content: center;
+			                align-items: center;
+			                height: 50vh;
+		                }
+		                .bloco{
+			                width: 100%;
+			                background-color: rgba(1, 31, 1, 0.623);
+		                }
+		                .text{
+			                margin: 20px;
+			                justify-content: center;
+			                font-size: 9pt;
+			                color: white;
+		                }
+		                .materia{
+			                margin: 8px;
+			                    font-size: 10pt;
+		                }
+		                #bloco2{
+		                    	margin-top: 10px;
+		                }
+		                #bloco3{
+		                	margin-top: 10px;
+		                }
+	        	}
+		</style>
+	    </head>
+	
+	    <body>
+		    
+	                                        <!-- CABEÇALHO -->
+		    
+	        	<header>
+	
+		            	<article>
+		                	<img src="./Imagem/logoescola.jpg" alt="logoescola">
+		                	<h1 id="tituloHeader">TecnoLab</h1>
+		            	</article>
+		
+		            	<nav>
+		                	<ul>
+		                    		<a href="#bloco1"><li>PWD</li></a>
+		                    		<a href="#bloco2"><li>DG</li></a>
+		                    		<a href="#bloco3"><li>APS</li></a>
+		                	</ul>
+		            	</nav>
+	
+	        	</header>
+		    
+	                                        <!-- CORPO -->
+		    
+	        	<main>
+	
+		            	<article id="imagem">
+		            		<img src="./Imagem/backgroundphone.webp" id="FireFly2" alt="MyLove2">
+		            		<img src="./Imagem/Character_Firefly_Introduction.webp" id="FireFly" alt="MyLove">
+		            	</article>
+		
+		                                        <!-- BLOCO 1 -->
+				
+		            	<section id="Blocos">
+		            	<section class="bloco" id="bloco1">
+		
+		                	<h1 class="materia">PROGRAMAÇÃO WEB DESIGN</h1>
+		
+		                	<p class="text">
+		                    		Birds are born with no shackles
+		                    		Then what fetters my fate?
+		                    		Blown away, the white petals
+		                    		Leave me trapped in the cage
+		                	</p>
+		            	</section>
+		
+		                                        				<!-- BLOCO 2 -->
+		
+		            	<section class="bloco" id="bloco2">
+		
+		                	<h1 class="materia">DESENVOLVIMENTO DE GAMES</h1>
+		
+		                	<p class="text">
+		                    		Let my heart bravely spread the wings
+		                    		Soaring past the night, to trace the bright moonlight
+		                    		Let the clouds heal me of the stains
+		                    		Gently wipe the sorrow of my life
+		                    		I dream
+		                	</p>
+		            	</section>
+		
+		                                        				<!-- BLOCO 3 -->
+		
+		            	<section class="bloco" id="bloco3">
+		
+		                	<h1 class="materia">ANÁLISE E PROJETO DE SISTEMA</h1>
+		
+		                	<p class="text">
+		                    		No further hesitation
+		                    		On those unanswered questions
+		                    		So now, I’ll make a dream unchained
+		                	</p>
+		            	</section>
+		        	</section>
+	        	</main>
+		    
+	                                        					<!-- RODAPÉ -->
+		    
+			<footer>
+			        <p>
+			        	Site feito por Davi Medeiros e Warlem
+				</p>
+		        </footer>
+	    </body>
 </html>
