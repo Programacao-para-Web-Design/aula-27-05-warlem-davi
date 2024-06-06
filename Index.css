@@ -94,10 +94,11 @@
 	                                /* --- MEDIA FOOTER --- */
 
 	footer{
-		color: white;
+		color: black;
 		font-weight: bold;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
+		background-color: yellow;
 	}
 }
