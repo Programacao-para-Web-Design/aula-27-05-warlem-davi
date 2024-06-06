@@ -1,40 +1,99 @@
 	                                /* --- MEDIA --- */
 	
-	            @media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
 	
 	                                /* --- MEDIA CABEÇALHO --- */
 	
-				header{
-		                    	width: 100%;
-					background-color: rgba(1, 31, 1, 0.623);
-		                }
+	header{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		position: fixed;
+		width: 100%;
+		margin-top: -8px;
+		margin-left: -8px;
+		padding-top: 10px;
+		background-color: rgba(0, 0, 0, 0.623);
+		text-align: center;
+	}
+	img{
+		width: 100px;
+		height: 100px;
+	}
+	#tituloHeader{
+		color: white;
+	}
+	li{
+		display: inline-block;
+		list-style-type: none;
+	}
+	a{
+		color: white;
+		font-weight: bold;
+	}
 		
 		                                /* --- MEDIA CORPO --- */
 			    
-		                body{
-			                background-image: url("Imagem/backgroundcell.jpg");
-			                background-repeat: no-repeat;
-			                background-size: cover;
-			                background-attachment: fixed;
-		                }
-		                main{
-			                display: flex;
-			                align-items: center;
-			                justify-content: center;
-			                width: 100%;
-			                flex-direction: row;
-			                scroll-behavior: smooth;
-		                }
-	                	h1{
-	                    		font-size: 12pt;
-	                	}
+	body{
+		background-image: url("Imagem/72b90286af67ecb1f9041fc78aff0391_2661860057131582516.webp");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+	main{
+		display: flex;
+		width: 100%;
+		flex-direction: row;
+		scroll-behavior: smooth;
+	}
+	h1{
+	    font-size: 12pt;
+	}
 
 	                                /* --- MEDIA BLOCOS --- */
 	
-		                #Blocos{
-			                width: 70%;
-			                justify-content: center;
-			                align-items: center;
-			                height: 50vh;
-		        	}
-	        	}
+	#Blocos{
+		width: 70%;
+		justify-content: center;
+		align-items: center;
+		height: 50vh;
+		background-color: black;
+		margin-top: 21vh;
+	}
+	#article1{
+		background-color: blue;
+		margin: 20px 0px 20px 20px;
+		width: 250px;
+		height: 200px;
+	}
+	#article2{
+		background-color: red;
+		margin: 20px 0px 20px 20px;
+		width: 250px;
+		height: 200px;
+	}
+	#aside1{
+		background-color: #ff6b99;
+		width: 100px;
+		height: 100%;
+		margin-left: 150px;
+	}
+	#aside2{
+		background-color: #00ff62;
+		margin-left: 10px;
+		width: 110px;
+		height: 50vh;
+		margin-top: 21vh;
+	}
+
+	                                /* --- MEDIA FOOTER --- */
+
+	footer{
+		color: white;
+		font-weight: bold;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+}
