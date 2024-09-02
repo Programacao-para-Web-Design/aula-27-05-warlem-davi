@@ -1,9 +1,7 @@
 	                                /* --- MEDIA --- */
 	
 @media screen and (max-width: 500px) {
-body{
-	background-color: #36F4F6;
-}
+
 	                                /* --- MEDIA CABEÇALHO --- */
 	
 	header{
@@ -46,6 +44,7 @@ body{
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-attachment: fixed;
+		background-color: #36F4F6;
 	}
 	main{
 		display: flex;
